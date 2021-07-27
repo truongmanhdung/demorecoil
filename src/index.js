@@ -5,10 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {RecoilRoot} from "recoil";
 import 'antd/dist/antd.css';
+import { BrowserRouter as Router } from "react-router-dom";
 ReactDOM.render(
   <React.StrictMode>
     <RecoilRoot>
-        <App />
+        <Router>
+            <App />
+        </Router>
     </RecoilRoot>
   </React.StrictMode>,
   document.getElementById('root')
