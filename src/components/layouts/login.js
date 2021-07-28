@@ -19,6 +19,7 @@ function Login(props) {
                 console.log("error message", error);
             }
         }
+
         fetchUserList()
     },[])
     const onFinish = (values) => {
@@ -26,8 +27,8 @@ function Login(props) {
         const password = values.password;
         for (let i = 0; i < users.length; i++) {
             if(email == users[i].email && password == users[i].password){
-                localStorage.setItem("email",email);
-                setUsers(users[i]);
+                // localStorage.setItem("email",email);
+                // setUsers(users[i]);
                 history.push("/")
             }
         }

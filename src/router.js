@@ -2,6 +2,7 @@ import React from "react";
 import Home from "./components/layouts/home";
 import Login from "./components/layouts/login";
 import Sigup from "./components/layouts/sigup";
+import Box from "./components/layouts/box/box";
 const routes = [
 
     {
@@ -18,6 +19,11 @@ const routes = [
         path: "/sigup",
         exact: false,
         component: () => <Sigup/>,
+    },
+    {
+        path: "/box",
+        exact: false,
+        component: () => <Box/>,
     },
 
 
